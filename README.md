@@ -1,53 +1,87 @@
-# React + TypeScript + Vite
+# Calculator App
+A simple calculator application built with React, TypeScript, and Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+- ✨ **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division
+- 🔢 **Decimal Support**: Handle decimal numbers with precision
+- 🧮 **Parentheses Support**: Complex expressions with proper order of operations
+- ⌫ **Backspace Functionality**: Remove last entered character
+- 🗑️ **Clear Function**: Reset the calculator with a single click
+- 🎯 **Error Handling**: Graceful error handling for invalid expressions
+- 📱 **Responsive Design**: Works seamlessly across different screen sizes
+- ⚡ **Fast Performance**: Built with Vite for lightning-fast development and builds
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- **React 19** - Modern React with latest features
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and development server
+- **CSS3** - Custom styling for responsive design
+- **ESLint** - Code quality and consistency
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Node.js (version 18 or higher)
+- npm or yarn package manager
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+```bash
+git clone https://github.com/kwchun0520/calculator.git
+cd calculator
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build the app for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint for code quality checks
+
+## How to Use
+
+1. **Basic Operations**: Click number buttons to input values, then click operation buttons (+, -, *, /) to perform calculations
+2. **Decimal Numbers**: Use the decimal point (.) button for floating-point numbers
+3. **Complex Expressions**: Use parentheses () for grouping operations
+4. **Calculate**: Press the equals (=) button to evaluate the expression
+5. **Clear**: Press 'C' to clear the display
+6. **Backspace**: Press '<' to remove the last entered character
+
+## Project Structure
+
+```
+src/
+├── components/
+│   └── Calculator.tsx    # Main calculator component
+├── styles/
+│   └── Calculator.css    # Calculator-specific styles
+├── App.tsx              # Root application component
+├── App.css              # Global application styles
+├── index.css            # Base styles
+└── main.tsx             # Application entry point
+```
+
+## Acknowledgments
+
+- Built with [Vite](https://vitejs.dev/) for optimal development experience
+- Styled with modern CSS for a clean, professional look
+- TypeScript for enhanced developer experience and code reliability
 import reactDom from 'eslint-plugin-react-dom'
 
 export default defineConfig([

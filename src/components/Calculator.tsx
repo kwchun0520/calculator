@@ -38,22 +38,26 @@ function Display() {
                 <input type="text" value={value} readOnly/>
             </div>
             <div className='keys'>
-                <button onClick={handleClick} className="key" value="1">1</button>
-                <button onClick={handleClick} className="key" value="2">2</button>
-                <button onClick={handleClick} className="key" value="3">3</button>
+                <button onClick={handleClick} className="key" value="7">7</button>
+                <button onClick={handleClick} className="key" value="8">8</button>
+                <button onClick={handleClick} className="key" value="9">9</button>
                 <button onClick={backspace} className="key" value="<">{'<'}</button>
+                
                 <button onClick={handleClick} className="key" value="4">4</button>
                 <button onClick={handleClick} className="key" value="5">5</button>
                 <button onClick={handleClick} className="key" value="6">6</button>
                 <button onClick={handleClick} className="key" value="+">+</button>
-                <button onClick={handleClick} className="key" value="7">7</button>
-                <button onClick={handleClick} className="key" value="8">8</button>
-                <button onClick={handleClick} className="key" value="9">9</button>
+
+                <button onClick={handleClick} className="key" value="1">1</button>
+                <button onClick={handleClick} className="key" value="2">2</button>
+                <button onClick={handleClick} className="key" value="3">3</button>
                 <button onClick={handleClick} className="key" value="-">-</button>
+
                 <button onClick={clear} className="key" value="C">C</button>
                 <button onClick={handleClick} className="key" value="0">0</button>
                 <button onClick={handleClick} className="key" value="/">/</button>
                 <button onClick={handleClick} className="key" value="*">*</button>
+                
                 <button onClick={handleClick} className="key" value="(">(</button>
                 <button onClick={handleClick} className="key" value=")">)</button>
                 <button onClick={handleClick} className="key" value=".">.</button>
